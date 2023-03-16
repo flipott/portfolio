@@ -53,12 +53,18 @@ table {
 
 html, body {
     background: #4F5D75;
+    scroll-behavior: smooth;
 }
 
 body {
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.25em;
 }
 
 .header {
@@ -69,11 +75,22 @@ body {
     justify-content: right;
     padding-inline: 55px;
     transition: background .2s ease;
+    top: 0;
+    position: sticky;
 }
 
 .header:hover {
     background: #3f4a5c;
+}
 
+.footer {
+    background: #4C596F;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 100;
 }
 
 .desktop-menu {
@@ -109,6 +126,150 @@ body {
     border: none;
     cursor: pointer;
 }
+
+.hero {
+    margin-block: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding-inline: 55px;
+    text-align: center;
+    scroll-margin-top: 55px;
+}
+
+.hero h1 {
+    font-size: 5rem;
+}
+
+.hero > div {
+    font-size: 1.75rem;
+    background: #717589;
+    padding: 1em;
+}
+
+.section-header {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.section-header h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.section-line {
+    width: 150px;
+    height: 6px;
+    background: #94B8C3;
+}
+
+.page-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    padding-inline: 55px;
+    margin-block: 3em;
+    scroll-margin-top: 55px;
+}
+
+.skill-container {
+    /* background: #3D4051; */
+    display: flex;
+    padding: 1.5em;
+    gap: 1.5em;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    transition: background .3s ease;
+}
+
+.skill-container:hover {
+    background: #494d61;
+}
+
+.icon-card {
+    background: #2E3238;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    width: 80px;
+    height: 80px;
+    gap: 0.5em;
+    transition: background .2s ease;
+}
+
+.icon-card:hover {
+    background: #000000;
+}
+
+.icon-card img {
+    height: 55px;
+}
+
+.icon-card p {
+    border-top: #4F5D75 solid 2px;
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+    line-height: 25px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background: #5E6279;
+    padding: 1em;
+}
+
+.project-card h3 {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1.7rem;
+}
+
+.project-bottom {
+    display: flex;
+    gap: 2em;
+}
+
+.project-bottom img {
+    max-width: 200px;
+}
+
+.project-right {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: space-between;
+}
+
+.contact-container {
+    display: flex;
+    padding: 1em;
+    gap: 3em;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 600px) {
     .desktop-menu {
