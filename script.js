@@ -18,3 +18,7 @@ for (let i = 0; i < mobileMenuLinks.length; i++) {
         mobileMenu.classList.remove("show-mobile-menu");
     });
 }
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
