@@ -21,4 +21,4 @@ for (let i = 0; i < mobileMenuLinks.length; i++) {
 
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
-  }
+}
