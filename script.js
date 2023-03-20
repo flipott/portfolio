@@ -22,3 +22,15 @@ for (let i = 0; i < mobileMenuLinks.length; i++) {
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 }
+
+
+const observer = new IntersectionObserver((entry) => {
+    entry.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+const hidden = document.querySelectorAll(".hidden");
+hidden.forEach((element) => observer.observe(element));
