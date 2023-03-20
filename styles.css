@@ -61,6 +61,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 p {
