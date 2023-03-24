@@ -166,7 +166,9 @@ p {
     background: #717589;
     padding: 1em;
     z-index: 0;
-    animation: fadeIn 3s ease;
+    opacity: 0;
+    animation: fadeIn 3s ease forwards;
+    animation-delay: 1.5s;
 }
 
 @keyframes fadeIn {
